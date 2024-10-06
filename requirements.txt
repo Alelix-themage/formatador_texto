@@ -1,0 +1,4 @@
+streamlit 
+docx
+docx.shared
+docx.enum.text
