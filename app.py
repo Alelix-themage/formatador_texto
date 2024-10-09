@@ -31,13 +31,14 @@ def formatar_abnt(titulo, texto):
     print("Documento salvo como texto_abnt.docx")
     
     
-st.title("TCC MAKER")
+st.title("Formatador de Textos ABNT")
 st.markdown("Formate o seu texto no Padrão ABNT")
-
+st.markdown(" Importante apertar 'Enter' nos campos")
 # Exemplo de uso
 titulo = st.text_input("Digite o seu título")
 titulo_formatado = titulo.upper()
 texto = st.text_area(label="Digite o seu texto")
+
 
 if titulo and texto:
     formatar_abnt(titulo_formatado, texto)
@@ -45,9 +46,10 @@ if titulo and texto:
 with open("texto_abnt.docx", "rb") as file:
         doc_bytes = file.read()
 
-st.download_button(
+send = st.download_button(
     label="Baixar Documento ABNT",
     data=doc_bytes,  # Passa o conteudo do arquivo como bytes
     file_name="texto_abnt.docx",  # Nome do arquivo
     mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
 )
+
