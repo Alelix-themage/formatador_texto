@@ -1,2 +1,5 @@
 streamlit 
 docx                                       
+exceptions 
+warnings 
+logging                                                         
