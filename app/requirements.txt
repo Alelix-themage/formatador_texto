@@ -1,0 +1,7 @@
+streamlit 
+docx                                       
+pandas
+openpyxl
+sqlite3
+uvicorn 
+fastapi 
