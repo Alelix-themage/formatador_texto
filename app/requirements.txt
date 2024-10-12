@@ -1,7 +1,3 @@
-streamlit 
-docx                                       
+streamlit
+python-docx
 pandas
-openpyxl
-sqlite3
-uvicorn 
-fastapi 
